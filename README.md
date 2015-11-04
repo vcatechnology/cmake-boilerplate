@@ -1,6 +1,10 @@
 C/C++ CMake Boilerplate
 =======================
 
+[![Travis Build Status](https://travis-ci.org/vcatechnology/cmake-boilerplate.svg?branch=master)](https://travis-ci.org/vcatechnology/cmake-boilerplate)
+[![Appveyor Build Status](https://ci.appveyor.com/api/projects/status/github/vcatechnology/cmake-boilerplate?svg=true)](https://ci.appveyor.com/project/vcatechnology/cmake-boilerplate/branch/master)
+[![Coverage Status](https://coveralls.io/repos/vcatechnology/cmake-boilerplate/badge.svg?branch=master&service=github)](https://coveralls.io/github/vcatechnology/cmake-boilerplate?branch=master)
+
 This project allows for a good start for any C/C++ project that would like to
 be built with CMake. It includes:
 
