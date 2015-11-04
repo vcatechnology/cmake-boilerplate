@@ -59,3 +59,29 @@ git push -u origin master
 
 6. Start writing code! The `README.md` in `src` and `test` will provide more
    information
+
+Building
+--------
+
+The project is a standard out of tree CMake project. To build the code run the
+following commands:
+
+```
+mkdir build
+cd build
+cmake -G "Unix Makefiles" ..
+make
+make test
+```
+
+On Windows it is possible to create and build Visual Studio projects from the
+command line:
+
+```
+mkdir build
+cd build
+cmake -G "Visual Studio 14 2015 Win64" ..
+set "msbuild_opts=/clp:OnlyErrors;OnlyWarnings /nologo /m /v:m"
+msbuild %msbuild_opts% /p:Configuration=Release /p:Platform=x64 boilerplate.sln
+msbuild %msbuild_opts% RUN_TESTS.vcxproj
+```
